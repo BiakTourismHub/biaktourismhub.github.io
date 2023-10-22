@@ -1,0 +1,23 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJCcnlhbiIsImVtYWlsIjoiYWRtaW5nODhAZ21haWwuY29tIiwiaWF0IjoxNjk3OTc0ODM0LCJleHAiOjE2OTc5NzQ4NTR9.EuGY_d4ygs25aOOWGAX4qFff4Xn7WsTsga8-jNL3Ru0
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Bryan",
+    "email": "adming88@gmail.com",
+    "password":"123456",
+    "confPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "adming88@gmail.com",
+    "password": "123456"
+}
+###
+DELETE http://localhost:5000/logout
